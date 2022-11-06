@@ -7,11 +7,4 @@
     padding-right: 10px; /* 3 */
     padding-left: 10px; /* 3 */
   }
-
-  .row_pc :nth-child(1) {
-    order: 2;
-  }
-  .row_pc :nth-child(2) {
-    order: 1;
-  }
 }

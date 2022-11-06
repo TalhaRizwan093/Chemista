@@ -1,11 +1,14 @@
-import styles from "./style";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
+import Search from "./Components/Seacrh/Search";
+import Cards from "./Components/Cards/Cards";
 
 const App = () => {
   return (
     <>
       <Navbar />
+      <Search />
+      <Cards />
 
       {/* <div className="flex justify-between p-5 main-nav">
         <div>Logo</div>
