@@ -1,0 +1,23 @@
+.nav-options {
+  display: flex;
+  align-items: center;
+}
+
+.btn-gradiant {
+  transition: all 1s ease-in;
+  /* background: linear-gradient(
+    to bottom right,
+    #84cc64 34%,
+    #121d97 99%
+  ) !important; */
+
+  background-color: #121d97 !important;
+}
+
+.nav-opt-color {
+  transition: all 0.5s;
+}
+
+.nav-opt-color:hover {
+  background-color: #121d97;
+}

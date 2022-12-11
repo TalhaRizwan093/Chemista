@@ -2,6 +2,8 @@ import React, { useState, useRef } from "react";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "../../assets/chemista_logo.png";
+import "./Navbar.css";
 
 const navigation = [
   { name: "Find Tutors", href: "#", current: false },
@@ -25,9 +27,9 @@ const Navbar = () => {
           <>
             <div className="flex justify-between">
               <div className="logo px-3">
-                <p>Chemista</p>
+                <img src={logo} alt="" width="200px" />
               </div>
-              <div className="hidden md:ml-6 sm:block">
+              <div className="hidden md:mr-14 sm:flex  nav-options">
                 <div className="flex">
                   {navigation.map((item) => (
                     <a
@@ -36,7 +38,7 @@ const Navbar = () => {
                       className={classNames(
                         item.current
                           ? "bg-gradient-to-br from-green-400 to-blue-600 text-white"
-                          : "text-gray-500 hover:bg-gradient-to-br from-green-400 to-blue-600 hover:text-white",
+                          : "ml-3 text-gray-500 nav-opt-color from-slate-50 to-slate-600 hover:text-white",
                         "px-3 py-2 rounded-md text-sm font-medium"
                       )}
                       aria-current={item.current ? "page" : undefined}
@@ -47,7 +49,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="flex gap-3">
-                <div className="left-0 flex items-center sm:hidden">
+                <div className="left-0 flex items-center sm:hidden ">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md  text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
@@ -85,7 +87,7 @@ const Navbar = () => {
                   {login == false && (
                     <button
                       type="button"
-                      class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                      className="btn-gradiant text-white  hover:bg-gradient-to-bl focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
                     >
                       Signin
                     </button>
@@ -168,7 +170,7 @@ const Navbar = () => {
                     className={classNames(
                       item.current
                         ? "bg-gradient-to-br from-green-400 to-blue-600 text-white"
-                        : "text-gray-500 hover:bg-gradient-to-br from-green-400 to-blue-600 hover:text-white",
+                        : "text-gray-500 nav-opt-color hover:text-white",
                       "block px-3 py-2 rounded-md text-base font-medium"
                     )}
                     aria-current={item.current ? "page" : undefined}

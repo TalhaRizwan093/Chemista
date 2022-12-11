@@ -8,3 +8,85 @@
     padding-left: 10px; /* 3 */
   }
 }
+
+a:hover {
+  color: #121d97;
+}
+
+.cards-container {
+  width: 90vw;
+}
+
+.card-lines {
+  line-height: 33pt;
+}
+
+.hover-underline-animation {
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #121d97;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.video-card {
+  margin-bottom: 44px;
+  padding: 40px;
+}
+
+.video-card:hover {
+  background-color: #c0f8d4;
+  transition: all 1s ease;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.videos-frame {
+  width: 50%;
+  height: 100px;
+}
+
+.card-h {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+}
+
+.cards-bg {
+  position: relative;
+}
+
+.cards-wave {
+  position: absolute;
+
+  bottom: 0;
+}
+
+.border_color {
+  border-image: linear-gradient(#58a237, #121d97) 30;
+  border-width: 2px;
+  border-style: solid;
+  /* border-color: linear-gradient(to bottom right, #84cc64 34%, #121d97 99%); */
+}
+
+.cards {
+  margin-top: 80px;
+}

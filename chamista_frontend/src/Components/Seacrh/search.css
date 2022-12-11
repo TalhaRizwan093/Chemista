@@ -6,3 +6,7 @@
   padding-right: 10px; /* 3 */
   padding-left: 10px; /* 3 */
 }
+
+.btn-color {
+  background-color: #121d97 !important;
+}
